@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="linkedin" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        fill: #0b86ca;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2">
+    <g id="Layer_1-2">
+      <rect class="st1" width="32" height="32" rx="7.18" ry="7.18"/>
+      <path class="st0" d="M8.87,13.3h3.33v10.73h-3.33v-10.73ZM10.56,7.97c1.07,0,1.93.86,1.93,1.93,0,1.07-.86,1.93-1.93,1.93-1.06,0-1.92-.86-1.93-1.92,0-1.07.85-1.93,1.92-1.94,0,0,0,0,.01,0M14.32,13.3h3.2v1.46c.65-1.12,1.87-1.78,3.16-1.73,3.33,0,4,2.22,4,5.11v5.89h-3.33v-5.19c0-1.24,0-2.85-1.73-2.85s-2,1.35-2,2.75v5.31h-3.33v-10.75Z"/>
+    </g>
+  </g>
+</svg>

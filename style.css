@@ -1,0 +1,210 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section { 
+  padding: 100px 20px; 
+  max-width: 900px; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Hero */
+.hero-avatar img {
+  width: 140px;              /* Fotoğraf boyutu */
+  height: 140px;             /* Kare olması şart */
+  border-radius: 50%;        /* Yuvarlak */
+  object-fit: cover;         /* Fotoğraf taşmadan sığar */
+  border: 4px solid #fff;    /* Beyaz çerçeve */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  transition: transform 0.3s;
+}
+
+.hero-avatar img:hover {
+  transform: scale(1.05); /* Hover’da hafif büyüme efekti */
+}
+
+
+/* Projects (Ana Sayfa) */
+.projects .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  padding: 0 40px; /* Yanlardan boşluk */
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+/* Hover zoom efekti */
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Hover ile görünen başlık */
+.project-title {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: bottom 0.3s ease;
+}
+
+.project-card:hover .project-title {
+  bottom: 0;
+}
+
+
+/* ===== Project Pages Gallery (koc.html vb.) ===== */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-title {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  transition: bottom 0.3s ease;
+}
+
+.gallery-item:hover .gallery-title {
+  bottom: 0;
+}
+
+
+/* ===== Bottom Navigation Bar ===== */
+.bottom-nav {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  padding: 10px 25px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.bottom-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 18px;
+  color: #222;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.bottom-nav a:hover {
+  background-color: rgba(173, 216, 230, 0.3); /* Açık mavi hover */
+}
+
+/* ===== About Section ===== */
+.about-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background: linear-gradient(to right, #f0f4ff, #ffffff);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.about-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* ===== Contact Section ===== */
+.contact-card {
+  background: #f8f9ff;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.contact-card .socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-card .socials img {
+  width: 32px;
+  transition: transform 0.3s;
+}
+
+.contact-card .socials img:hover {
+  transform: scale(1.2);
+}
