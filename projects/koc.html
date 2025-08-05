@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koç İlaç | Proje</title>
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .project-detail {
+      max-width: 900px;
+      margin: 120px auto 60px;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .project-detail h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .project-detail p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    /* Hover animasyonlu galeri */
+    .project-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .gallery-item img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-title {
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 1rem;
+      transition: bottom 0.3s ease;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .gallery-item:hover .gallery-title {
+      bottom: 0;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background: rgba(173, 216, 230, 0.3);
+      border-radius: 50px;
+      color: #222;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .back-link:hover {
+      background: rgba(173, 216, 230, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="project-detail">
+    <h1>Koç İlaç</h1>
+    <p>
+      Burada Koç İlaç için yaptığım sosyal medya gönderileri ve bayram tebrik kartı çalışmaları yer almaktadır.
+    </p>
+
+    <div class="project-gallery">
+      <div class="gallery-item">
+        <img src="../images/ramazanbayrami_koc.jpg" alt="Ramazan Bayramı Tebrik Kartı">
+        <div class="gallery-title">Ramazan Bayramı Tebrik Kartı Tasarımı</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="../images/nevruzBayrami.jpg" alt="Nevruz Bayramı Sosyal Medya Tasarımı">
+        <div class="gallery-title">Nevruz Bayramı Sosyal Medya Tasarımı</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="../images/kadirGecesi_koc.jpg" alt="Kadir Gecesi Sosyal Medya Tasarımı">
+        <div class="gallery-title">Kadir Gecesi Sosyal Medya Tasarımı</div>
+      </div>
+    </div>
+
+    <a href="../index.html#koc" class="back-link">← Ana Sayfaya Dön</a>
+    <script>
+      document.querySelector(".back-link").addEventListener("click", function(e) {
+        e.preventDefault();
+        history.back(); // Kaldığın yere döndürür
+      });
+    </script>
+
+  </div>
+
+</body>
+</html>
